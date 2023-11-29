@@ -3,7 +3,8 @@ head {
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
     padding: 0 var(--spacing-3);
     max-width: 900px;
     margin: 0 auto;
@@ -14,15 +15,6 @@ body {
 main {
     display: block;
 }
-
-
-footer {
-    background-color: #3498db;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-
 
 .social-icons {
     margin-top: 20px;
@@ -100,18 +92,6 @@ h2 {
     margin-bottom: var(--spacing-2);
 }
 
-
-element.style {
-}
-nav {
-    display: flex;
-    align-items: center;
-    padding: var(--spacing-3) 0;
-}
-user agent stylesheet
-nav {
-    display: block;
-}
 body {
     font-family: "Open Sans", sans-serif;
     margin: 0;
@@ -132,4 +112,86 @@ html, body {
     --spacing-4: 24px;
     --border-radius: 12px;
     --font-color: #323232;
+}
+
+details[open] > summary:first-of-type {
+    list-style-type: disclosure-open;
+}
+
+summary {
+    display: block;
+    list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
+}
+
+details[open] > summary:first-of-type {
+    list-style-type: disclosure-open;
+}
+
+details > summary:first-of-type {
+    display: list-item;
+    counter-increment: list-item 0;
+    list-style: inside disclosure-closed;
+}
+
+:root {
+    --spacing-1: 8px;
+    --spacing-2: 12px;
+    --spacing-3: 16px;
+    --spacing-4: 24px;
+    --border-radius: 12px;
+    --font-color: #323232;
+}
+
+::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+}
+
+#skills-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.fab, .far {
+    font-weight: 400;
+}
+
+.fa, .fab, .fad, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.fa-figma:before {
+    content: "\f799";
+}
+
+section {
+    padding: var(--spacing-3) 0;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
 }
