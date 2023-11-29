@@ -114,43 +114,6 @@ html, body {
     --font-color: #323232;
 }
 
-details[open] > summary:first-of-type {
-    list-style-type: disclosure-open;
-}
-
-summary {
-    display: block;
-    list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
-}
-
-details[open] > summary:first-of-type {
-    list-style-type: disclosure-open;
-}
-
-details > summary:first-of-type {
-    display: list-item;
-    counter-increment: list-item 0;
-    list-style: inside disclosure-closed;
-}
-
-:root {
-    --spacing-1: 8px;
-    --spacing-2: 12px;
-    --spacing-3: 16px;
-    --spacing-4: 24px;
-    --border-radius: 12px;
-    --font-color: #323232;
-}
-
-::marker {
-    unicode-bidi: isolate;
-    font-variant-numeric: tabular-nums;
-    text-transform: none;
-    text-indent: 0px !important;
-    text-align: start !important;
-    text-align-last: start !important;
-}
-
 #skills-container {
     display: flex;
     width: 100%;
@@ -194,4 +157,13 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
+}
+
+:root {
+    --spacing-1: 8px;
+    --spacing-2: 12px;
+    --spacing-3: 16px;
+    --spacing-4: 24px;
+    --border-radius: 12px;
+    --font-color: #323232;
 }
